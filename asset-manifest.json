@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/SongWebSite/static/css/main.95640510.css",
+    "main.js": "/SongWebSite/static/js/main.cd4d9ccb.js",
+    "static/js/453.f38d3b0f.chunk.js": "/SongWebSite/static/js/453.f38d3b0f.chunk.js",
+    "index.html": "/SongWebSite/index.html",
+    "main.95640510.css.map": "/SongWebSite/static/css/main.95640510.css.map",
+    "main.cd4d9ccb.js.map": "/SongWebSite/static/js/main.cd4d9ccb.js.map",
+    "453.f38d3b0f.chunk.js.map": "/SongWebSite/static/js/453.f38d3b0f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.95640510.css",
+    "static/js/main.cd4d9ccb.js"
+  ]
+}
