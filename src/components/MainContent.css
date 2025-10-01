@@ -1,0 +1,283 @@
+.main-content {
+  flex: 1;
+  padding: 60px 0;
+  background-color: #ffffff;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Vision Section */
+.vision-section {
+  text-align: center;
+  padding: 40px 0;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.vision-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.vision-quote {
+  font-size: 1.3rem;
+  font-style: italic;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  line-height: 1.6;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.vision-reference {
+  font-size: 1.1rem;
+  color: #7f8c8d;
+  font-weight: 500;
+}
+
+/* Sermon Section */
+.sermon-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video-container {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.video-placeholder {
+  width: 100%;
+  height: 300px;
+  background-color: #e9ecef;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.video-placeholder::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f8f9fa 25%, transparent 25%), 
+              linear-gradient(-45deg, #f8f9fa 25%, transparent 25%), 
+              linear-gradient(45deg, transparent 75%, #f8f9fa 75%), 
+              linear-gradient(-45deg, transparent 75%, #f8f9fa 75%);
+  background-size: 20px 20px;
+  background-position: 0 0, 0 10px, 10px -10px, -10px 0px;
+  opacity: 0.3;
+}
+
+.play-icon {
+  font-size: 4rem;
+  color: #27ae60;
+  z-index: 1;
+  position: relative;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.video-link {
+  color: #27ae60;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: underline;
+  transition: color 0.2s ease;
+}
+
+.video-link:hover {
+  color: #219a52;
+}
+
+/* Bulletin Section */
+.bulletin-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.bulletin-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.bulletin-btn {
+  background-color: #8b4513;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  min-width: 200px;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+  transition: all 0.3s ease;
+}
+
+.bulletin-btn:hover {
+  background-color: #a0522d;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+/* Prayer Section */
+.prayer-section {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+}
+
+.prayer-input-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.prayer-label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.prayer-input {
+  width: 100%;
+  padding: 15px 20px;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: white;
+  transition: border-color 0.2s ease;
+}
+
+.prayer-input:focus {
+  outline: none;
+  border-color: #27ae60;
+  box-shadow: 0 0 0 3px rgba(39, 174, 96, 0.1);
+}
+
+.prayer-input::placeholder {
+  color: #adb5bd;
+}
+
+/* Prayer Board Section */
+.prayer-board-section {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.prayer-board-list {
+  list-style: none;
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 12px;
+  padding: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.prayer-board-list li {
+  padding: 12px 0;
+  font-size: 1.1rem;
+  color: #2c3e50;
+  border-bottom: 1px solid #e9ecef;
+  position: relative;
+  padding-left: 20px;
+}
+
+.prayer-board-list li:last-child {
+  border-bottom: none;
+}
+
+.prayer-board-list li::before {
+  content: '•';
+  color: #27ae60;
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 40px 0;
+  }
+  
+  .content-container {
+    padding: 0 15px;
+  }
+  
+  .vision-section {
+    padding: 30px 20px;
+  }
+  
+  .vision-quote {
+    font-size: 1.1rem;
+    padding: 15px;
+  }
+  
+  .video-placeholder {
+    height: 250px;
+  }
+  
+  .play-icon {
+    font-size: 3rem;
+  }
+  
+  .bulletin-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .bulletin-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .prayer-section {
+    padding: 30px 20px;
+  }
+  
+  .prayer-board-list {
+    padding: 20px;
+  }
+  
+  .prayer-board-list li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .vision-quote {
+    font-size: 1rem;
+  }
+  
+  .video-placeholder {
+    height: 200px;
+  }
+  
+  .play-icon {
+    font-size: 2.5rem;
+  }
+  
+  .bulletin-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+}
