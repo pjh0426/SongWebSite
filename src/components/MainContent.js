@@ -10,9 +10,11 @@ const MainContent = () => {
           <h2 className="section-title">교회 비전</h2>
           <div className="vision-content">
             <blockquote className="vision-quote">
-              "얼꼼 진자항언, 시기외 매홀 연든저 목 믿든지 징성 철선파"
+              "성경의 진리를 삶으로 살아내어 복음을 전하는 교회"
+
+              본문: "푯대를 향하여 그리스도 예수 안에서 하나님이 위에서 부르신 부름의 상을 위하여 달려가노라"
             </blockquote>
-            <p className="vision-reference">2일 42</p>
+            <p className="vision-reference">빌립보서 3:14</p>
           </div>
         </section>
 
@@ -23,7 +25,7 @@ const MainContent = () => {
             <div className="video-placeholder">
               <div className="play-icon">▶</div>
             </div>
-            <a href="#latest-sermon" className="video-link">최산 설교 영상 보기</a>
+            <a href="#latest-sermon" className="video-link">최근 설교 영상 보기</a>
           </div>
         </section>
 
@@ -38,7 +40,7 @@ const MainContent = () => {
 
         {/* Prayer Section */}
         <section className="content-section prayer-section">
-          <h2 className="section-title">기도제목 & 나눔</h2>
+          <h2 className="section-title">기도 제목 & 나눔</h2>
           <div className="prayer-input-container">
             <label htmlFor="prayer-request" className="prayer-label">기도 오렁</label>
             <input 
@@ -52,11 +54,11 @@ const MainContent = () => {
 
         {/* Prayer Board Section */}
         <section className="content-section prayer-board-section">
-          <h2 className="section-title">기도 제독 게시판</h2>
+          <h2 className="section-title">기도 제목 게시판</h2>
           <ul className="prayer-board-list">
-            <li>버를 보잉시 음지 에닐 벙추 님당</li>
+            {/* <li>버를 보잉시 음지 에닐 벙추 님당</li>
             <li>진독 스제드진 제외 와응</li>
-            <li>도 스즈먼 회설목 지정</li>
+            <li>도 스즈먼 회설목 지정</li> */}
           </ul>
         </section>
       </div>
